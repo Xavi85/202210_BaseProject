@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Rock bands</h1>
+    <img src="https://www.poblanerias.com/wp-content/archivos/2020/07/Guitarra-de-rock.jpg" height="400px" width="600px" alt="Banda rock">
+  <div class="row">
+
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number of members</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let banda of bandas">
+            <td>
+              <dd>{{banda.id}}</dd>
+            </td>
+            <td>
+              <dd>{{banda.name}}</dd>
+            </td>
+            <td>
+              <dd>{{banda.numberOfMembers}}</dd>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="4">
+            <dd><a>Seasons average: </a>{{memebersAverage}}</dd>
+          </td>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
